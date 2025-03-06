@@ -22,9 +22,9 @@ public class POM_Utility_Screenshot {
 
 	            File dest = new File(screenshotDir, fname + System.currentTimeMillis() + ".png");
 	            FileUtils.copyFile(temp, dest);
-	            System.out.println("Screenshot saved: " + dest);
+	            System.out.println("\nScreenshot saved: " + dest);
 	        } catch (IOException e) {
-	            System.out.println("Failed to capture screenshot! Error: " + e.getMessage());
+	            System.out.println("\nFailed to capture screenshot! Error: " + e.getMessage());
 	        }
 
 }

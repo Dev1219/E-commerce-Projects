@@ -32,17 +32,18 @@ public class POM_Client_Ecommerce {
 	ExtentReports extent;
     ExtentSparkReporter sparkReporter;
     ExtentTest test;
-	//POM_Utility_Screenshot sc;
+	
 	
   @Test (priority=1)
   public void signUp() throws InterruptedException {
-	  System.out.println("SignUP Page: ");
+	  
+	  System.out.println("\n Test For SignUP Page: ");
 	  test = extent.createTest("signUp Test");
     try {
 	  signupPage.clickOnSignUpTab();
 	  Thread.sleep(5000);
-	  signupPage.setUsername("devendra121811345");
-	  signupPage.setPassword("testing121811345");
+	  signupPage.setUsername("devendra1231813456");
+	  signupPage.setPassword("testing1231813456");
 	  Thread.sleep(3000);
 	  POM_Utility_Screenshot.captureScreenshot(driver, "SignUP");
 	  signupPage.clickOnsignUPButton();
@@ -65,12 +66,12 @@ public class POM_Client_Ecommerce {
   @Test (priority=2)
   public void logIn() {
 	  
-	  System.out.println("Login Page: ");
+	  System.out.println("\nTest For Login Page: ");
 	  test = extent.createTest("logIn Test");
       try {
 	  loginPage.clickOnLoginTab();
-	  loginPage.enterUsername("devendra121811345");
-	  loginPage.enterPassword("testing121811345");
+	  loginPage.enterUsername("devendra1231813456");
+	  loginPage.enterPassword("testing1231813456");
 	  loginPage.clickOnLoginButton();
 	  POM_Utility_Screenshot.captureScreenshot(driver, "Login");
 	  test.pass("Login completed successfully");
@@ -83,7 +84,7 @@ public class POM_Client_Ecommerce {
   @Test (priority=3)
   public void browsingProduct() throws InterruptedException {
 	  
-	  System.out.println("Product Page: ");
+	  System.out.println("\nTest For Product Page: ");
 	  test = extent.createTest("browsingProduct Test");
 	  
 	  JavascriptExecutor js = (JavascriptExecutor) driver;
@@ -95,6 +96,7 @@ public class POM_Client_Ecommerce {
 	            Thread.sleep(3000);
 	            POM_Utility_Screenshot.captureScreenshot(driver, "Phones");
 	            test.pass("Browsed Phones category successfully");
+	            System.out.println("\nBrowsed Phones category successfully");
 	            Thread.sleep(3000);
 
 	            homePage.viewLaptops();
@@ -102,6 +104,7 @@ public class POM_Client_Ecommerce {
 	            Thread.sleep(3000);
 	            POM_Utility_Screenshot.captureScreenshot(driver, "Laptops");
 	            test.pass("Browsed Laptops category successfully");
+	            System.out.println("\nBrowsed Laptops category successfully");
 	            Thread.sleep(3000);
 
 	            homePage.viewMonitors();
@@ -109,6 +112,7 @@ public class POM_Client_Ecommerce {
 	            Thread.sleep(3000);
 	            POM_Utility_Screenshot.captureScreenshot(driver, "Monitors");
 	            test.pass("Browsed Monitors category successfully");
+	            System.out.println("\nBrowsed Monitors category successfully");
 	            Thread.sleep(3000);
 	            break; // SUCCESSFUL EXECUTION, EXIT LOOP
 	        } catch (org.openqa.selenium.StaleElementReferenceException e) {
@@ -126,7 +130,7 @@ public class POM_Client_Ecommerce {
   
   public void clickOnProduct() throws InterruptedException {
 	  
-	  System.out.println("Add Product Page: ");
+	  System.out.println("\nTest For Add Product Page: ");
 	  
 	  test = extent.createTest("clickOnProduct Test");
 	  
@@ -142,7 +146,7 @@ public class POM_Client_Ecommerce {
 	            Thread.sleep(3000);
 	            POM_Utility_Screenshot.captureScreenshot(driver, "AddPhone");
 	            test.pass("Product clicked and added to cart");
-	          
+	    
 	            Thread.sleep(3000);
 	            
 	            
@@ -162,11 +166,13 @@ public class POM_Client_Ecommerce {
   
   public void addToCart() throws InterruptedException {
 	  
-	  System.out.println("Add Cart Page: ");
+	  System.out.println("Test For Add Cart Page: ");
 	  test = extent.createTest("addToCart Test");
 	  try {
 	  cartPage.clickAddCart();
 	  test.pass("Product added to cart successfully");
+	  System.out.println("\nProduct Phone clicked and added to cart SuccessFully");
+      
       } catch (Exception e) {
           test.fail("Error adding product to cart: " + e.getMessage());
       }
@@ -196,6 +202,8 @@ public class POM_Client_Ecommerce {
 	            
 	            cartPage.clickAddCart();
 	            test.pass("Laptop added to cart successfully");
+	            System.out.println("\nProduct Laptop clicked and added to cart SuccessFully");
+		          
    
 	            break; // SUCCESSFUL EXECUTION, EXIT LOOP
 	        } catch (org.openqa.selenium.StaleElementReferenceException e) {
@@ -212,7 +220,7 @@ public class POM_Client_Ecommerce {
   @Test (priority=7)
   public void cartPageOpn() throws InterruptedException {
 	  
-	  System.out.println("Cart Page: ");
+	  System.out.println("\nTest For Cart Page: ");
 	  test = extent.createTest("cartPageOpn Test");
 	  
 	  JavascriptExecutor js = (JavascriptExecutor) driver;
@@ -241,7 +249,7 @@ public class POM_Client_Ecommerce {
   
   public void checkOutProcess() throws InterruptedException {
 	  
-	  System.out.println("CheckOut Page: ");
+	  System.out.println("\nTest For CheckOut Page: ");
 	  test = extent.createTest("checkOutProcess Test");
 	  try {
 	  //chekoutPage.checkOut();

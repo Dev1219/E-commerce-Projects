@@ -35,25 +35,6 @@ public class POM_Utility_CheckoutPage {
 	wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 	}
 	
-//	public void checkOut() {
-//		
-//		Set<String>window = driver.getWindowHandles();
-//		//System.out.println(window);	
-//		Iterator<String> itr = window.iterator();
-//		
-//		//String win1=itr.next();
-//		String win2=itr.next();
-//				
-////		
-////		System.out.println(win1);
-////		System.out.println(win2);
-//		
-//		driver.switchTo().window(win2);
-//		//System.out.println(driver.getTitle());
-//		
-		
-	//}
-	
 	public void nameField(String un) {
 		name.clear();
 		name.sendKeys(un);
@@ -92,16 +73,15 @@ public class POM_Utility_CheckoutPage {
 	public void purchaseMessage() {
 		
 		 wait.until(ExpectedConditions.visibilityOf(purchaseDescription));
-		// Retrieve and print the message text
+		
 	        
-		 System.out.println("Modal Message: " + purchaseDescription.getText());
-		// System.out.println("Modal Message: " + purchaseMessage2);
+		 System.out.println("\nPurchase Description Message: " + purchaseDescription.getText());
+		
 
-	        // Click the 'OK' button to close the modal
+	        // Click the 'OK' button to close
 		 confirmButton.click();
 
-	        // Optionally, wait for the modal to disappear
-	       // wait.until(ExpectedConditions.invisibilityOf(thankYouModal));
+	        
 		
 		
 	}

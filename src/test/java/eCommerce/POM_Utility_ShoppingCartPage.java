@@ -35,13 +35,13 @@ public class POM_Utility_ShoppingCartPage {
 	        Alert alert = driver.switchTo().alert();
 	        
 	        // Print alert message
-	        System.out.println("Alert Message: " + alert.getText());
+	        System.out.println("\nAlert Message: " + alert.getText());
 	        
 	        // Accept the alert
 	        alert.accept();
 	        
 	    } catch (Exception e) {
-	        System.out.println("No alert appeared: " + e.getMessage());
+	        System.out.println("\nNo alert appeared: " + e.getMessage());
 	}
 	    driver.navigate().back();
 	    driver.navigate().back();
