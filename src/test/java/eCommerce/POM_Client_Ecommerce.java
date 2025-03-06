@@ -28,6 +28,7 @@ public class POM_Client_Ecommerce {
 	POM_Add_SecondProduct laptopPage;
 	POM_Utility_CartPage cartPageOptn;
 	POM_Utility_CheckoutPage chekoutPage;
+	POM_Utility_Logout logoutPage;
 	
 	ExtentReports extent;
     ExtentSparkReporter sparkReporter;
@@ -42,8 +43,8 @@ public class POM_Client_Ecommerce {
     try {
 	  signupPage.clickOnSignUpTab();
 	  Thread.sleep(5000);
-	  signupPage.setUsername("devendra1231813456");
-	  signupPage.setPassword("testing1231813456");
+	  signupPage.setUsername("devendra134561");
+	  signupPage.setPassword("testing134561");
 	  Thread.sleep(3000);
 	  POM_Utility_Screenshot.captureScreenshot(driver, "SignUP");
 	  signupPage.clickOnsignUPButton();
@@ -70,8 +71,8 @@ public class POM_Client_Ecommerce {
 	  test = extent.createTest("logIn Test");
       try {
 	  loginPage.clickOnLoginTab();
-	  loginPage.enterUsername("devendra1231813456");
-	  loginPage.enterPassword("testing1231813456");
+	  loginPage.enterUsername("devendra134561");
+	  loginPage.enterPassword("testing134561");
 	  loginPage.clickOnLoginButton();
 	  POM_Utility_Screenshot.captureScreenshot(driver, "Login");
 	  test.pass("Login completed successfully");
@@ -166,7 +167,7 @@ public class POM_Client_Ecommerce {
   
   public void addToCart() throws InterruptedException {
 	  
-	  System.out.println("Test For Add Cart Page: ");
+	  System.out.println("\nTest For Add Cart Page: ");
 	  test = extent.createTest("addToCart Test");
 	  try {
 	  cartPage.clickAddCart();
@@ -274,7 +275,21 @@ public class POM_Client_Ecommerce {
       }
   }
   
-  
+  @Test (priority=9)
+  public void logoutProcess() {
+	  
+	  System.out.println("\nTest For Logout Page: ");
+	  test = extent.createTest("Logout Test");
+	  try {
+	  POM_Utility_Screenshot.captureScreenshot(driver, "Logout");
+	  logoutPage.clickOnLogOut();
+	  test.pass("Logout successfully");
+	  System.out.println("\nLogout SuccessFully: ");
+      
+      } catch (Exception e) {
+          test.fail("Error for Logout: " + e.getMessage());
+      }
+  }
   
   
   
@@ -300,6 +315,7 @@ public class POM_Client_Ecommerce {
 	  laptopPage = new POM_Add_SecondProduct(driver);
 	  cartPageOptn= new POM_Utility_CartPage(driver);
 	  chekoutPage= new POM_Utility_CheckoutPage(driver);
+	  logoutPage = new POM_Utility_Logout(driver);
   }
 
   @AfterTest

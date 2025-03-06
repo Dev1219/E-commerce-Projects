@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\ved08\AppData\Local\Temp\testng-eclipse-810752608\testng-customsuite.xml</span>
+                    <span>C:\Users\ved08\AppData\Local\Temp\testng-eclipse-1031488598\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">8 methods,   8 passed</span>
+                    <span class="method-stats">9 methods,   9 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -129,6 +129,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="eCommerce.POM_Client_Ecommerce" class="method navigator-link" hash-for-method="logIn">logIn</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="eCommerce.POM_Client_Ecommerce" class="method navigator-link" hash-for-method="logoutProcess">logoutProcess</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -203,6 +208,13 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="logoutProcess">
+                  </a> <!-- logoutProcess -->
+                  <span class="method-name">logoutProcess</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="selectLaptop">
                   </a> <!-- selectLaptop -->
                   <span class="method-name">selectLaptop</span>
@@ -220,7 +232,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\ved08\AppData\Local\Temp\testng-eclipse-810752608\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\ved08\AppData\Local\Temp\testng-eclipse-1031488598\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -269,44 +281,48 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(8);
+data.addRows(9);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'cartPageOpn')
 data.setCell(0, 2, 'eCommerce.POM_Client_Ecommerce')
-data.setCell(0, 3, 27719);
+data.setCell(0, 3, 27309);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'checkOutProcess')
 data.setCell(1, 2, 'eCommerce.POM_Client_Ecommerce')
-data.setCell(1, 3, 22574);
+data.setCell(1, 3, 22504);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'browsingProduct')
 data.setCell(2, 2, 'eCommerce.POM_Client_Ecommerce')
-data.setCell(2, 3, 20781);
+data.setCell(2, 3, 20496);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'signUp')
 data.setCell(3, 2, 'eCommerce.POM_Client_Ecommerce')
-data.setCell(3, 3, 18694);
+data.setCell(3, 3, 18678);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'selectLaptop')
 data.setCell(4, 2, 'eCommerce.POM_Client_Ecommerce')
-data.setCell(4, 3, 13491);
+data.setCell(4, 3, 12632);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'clickOnProduct')
 data.setCell(5, 2, 'eCommerce.POM_Client_Ecommerce')
-data.setCell(5, 3, 12650);
+data.setCell(5, 3, 11470);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'addToCart')
+data.setCell(6, 1, 'logoutProcess')
 data.setCell(6, 2, 'eCommerce.POM_Client_Ecommerce')
-data.setCell(6, 3, 1216);
+data.setCell(6, 3, 8399);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'logIn')
+data.setCell(7, 1, 'addToCart')
 data.setCell(7, 2, 'eCommerce.POM_Client_Ecommerce')
-data.setCell(7, 3, 831);
+data.setCell(7, 3, 1164);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'logIn')
+data.setCell(8, 2, 'eCommerce.POM_Client_Ecommerce')
+data.setCell(8, 3, 750);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -339,39 +355,43 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">signUp</span>
-                <span class="method-start">3769 ms</span>
+                <span class="method-start">6597 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">logIn</span>
-                <span class="method-start">22465 ms</span>
+                <span class="method-start">25285 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">browsingProduct</span>
-                <span class="method-start">23296 ms</span>
+                <span class="method-start">26042 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">clickOnProduct</span>
-                <span class="method-start">44079 ms</span>
+                <span class="method-start">46540 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">addToCart</span>
-                <span class="method-start">56733 ms</span>
+                <span class="method-start">58010 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">selectLaptop</span>
-                <span class="method-start">57951 ms</span>
+                <span class="method-start">59178 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">cartPageOpn</span>
-                <span class="method-start">71447 ms</span>
+                <span class="method-start">71812 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">checkOutProcess</span>
-                <span class="method-start">99166 ms</span>
+                <span class="method-start">99121 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">logoutProcess</span>
+                <span class="method-start">121627 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">121747 ms</span>
+                <span class="method-start">130029 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

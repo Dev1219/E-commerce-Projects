@@ -1,49 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-06T18:07:27 IST" name="Default suite" finished-at="2025-03-06T18:09:30 IST" duration-ms="122774">
+  <suite started-at="2025-03-06T20:41:26 IST" name="Default suite" finished-at="2025-03-06T20:43:37 IST" duration-ms="131035">
     <groups>
     </groups>
-    <test started-at="2025-03-06T18:07:27 IST" name="Default test" finished-at="2025-03-06T18:09:30 IST" duration-ms="122774">
+    <test started-at="2025-03-06T20:41:26 IST" name="Default test" finished-at="2025-03-06T20:43:37 IST" duration-ms="131035">
       <class name="eCommerce.POM_Client_Ecommerce">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:eCommerce.POM_Client_Ecommerce@4c178a76]" started-at="2025-03-06T18:07:27 IST" name="beforeTest" finished-at="2025-03-06T18:07:31 IST" duration-ms="3750" status="PASS">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:eCommerce.POM_Client_Ecommerce@fa4c865]" started-at="2025-03-06T20:41:26 IST" name="beforeTest" finished-at="2025-03-06T20:41:33 IST" duration-ms="6575" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="signUp()[pri:1, instance:eCommerce.POM_Client_Ecommerce@4c178a76]" started-at="2025-03-06T18:07:31 IST" name="signUp" finished-at="2025-03-06T18:07:50 IST" duration-ms="18694" status="PASS">
+        <test-method signature="signUp()[pri:1, instance:eCommerce.POM_Client_Ecommerce@fa4c865]" started-at="2025-03-06T20:41:33 IST" name="signUp" finished-at="2025-03-06T20:41:51 IST" duration-ms="18678" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signUp -->
-        <test-method signature="logIn()[pri:2, instance:eCommerce.POM_Client_Ecommerce@4c178a76]" started-at="2025-03-06T18:07:50 IST" name="logIn" finished-at="2025-03-06T18:07:51 IST" duration-ms="831" status="PASS">
+        <test-method signature="logIn()[pri:2, instance:eCommerce.POM_Client_Ecommerce@fa4c865]" started-at="2025-03-06T20:41:51 IST" name="logIn" finished-at="2025-03-06T20:41:52 IST" duration-ms="750" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logIn -->
-        <test-method signature="browsingProduct()[pri:3, instance:eCommerce.POM_Client_Ecommerce@4c178a76]" started-at="2025-03-06T18:07:51 IST" name="browsingProduct" finished-at="2025-03-06T18:08:11 IST" duration-ms="20781" status="PASS">
+        <test-method signature="browsingProduct()[pri:3, instance:eCommerce.POM_Client_Ecommerce@fa4c865]" started-at="2025-03-06T20:41:52 IST" name="browsingProduct" finished-at="2025-03-06T20:42:13 IST" duration-ms="20496" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browsingProduct -->
-        <test-method signature="clickOnProduct()[pri:4, instance:eCommerce.POM_Client_Ecommerce@4c178a76]" started-at="2025-03-06T18:08:11 IST" name="clickOnProduct" finished-at="2025-03-06T18:08:24 IST" duration-ms="12650" status="PASS">
+        <test-method signature="clickOnProduct()[pri:4, instance:eCommerce.POM_Client_Ecommerce@fa4c865]" started-at="2025-03-06T20:42:13 IST" name="clickOnProduct" finished-at="2025-03-06T20:42:24 IST" duration-ms="11470" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickOnProduct -->
-        <test-method signature="addToCart()[pri:5, instance:eCommerce.POM_Client_Ecommerce@4c178a76]" started-at="2025-03-06T18:08:24 IST" name="addToCart" finished-at="2025-03-06T18:08:25 IST" duration-ms="1216" status="PASS">
+        <test-method signature="addToCart()[pri:5, instance:eCommerce.POM_Client_Ecommerce@fa4c865]" started-at="2025-03-06T20:42:24 IST" name="addToCart" finished-at="2025-03-06T20:42:25 IST" duration-ms="1164" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addToCart -->
-        <test-method signature="selectLaptop()[pri:6, instance:eCommerce.POM_Client_Ecommerce@4c178a76]" started-at="2025-03-06T18:08:25 IST" name="selectLaptop" finished-at="2025-03-06T18:08:39 IST" duration-ms="13491" status="PASS">
+        <test-method signature="selectLaptop()[pri:6, instance:eCommerce.POM_Client_Ecommerce@fa4c865]" started-at="2025-03-06T20:42:25 IST" name="selectLaptop" finished-at="2025-03-06T20:42:38 IST" duration-ms="12632" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectLaptop -->
-        <test-method signature="cartPageOpn()[pri:7, instance:eCommerce.POM_Client_Ecommerce@4c178a76]" started-at="2025-03-06T18:08:39 IST" name="cartPageOpn" finished-at="2025-03-06T18:09:06 IST" duration-ms="27719" status="PASS">
+        <test-method signature="cartPageOpn()[pri:7, instance:eCommerce.POM_Client_Ecommerce@fa4c865]" started-at="2025-03-06T20:42:38 IST" name="cartPageOpn" finished-at="2025-03-06T20:43:05 IST" duration-ms="27309" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cartPageOpn -->
-        <test-method signature="checkOutProcess()[pri:8, instance:eCommerce.POM_Client_Ecommerce@4c178a76]" started-at="2025-03-06T18:09:06 IST" name="checkOutProcess" finished-at="2025-03-06T18:09:29 IST" duration-ms="22574" status="PASS">
+        <test-method signature="checkOutProcess()[pri:8, instance:eCommerce.POM_Client_Ecommerce@fa4c865]" started-at="2025-03-06T20:43:05 IST" name="checkOutProcess" finished-at="2025-03-06T20:43:28 IST" duration-ms="22504" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkOutProcess -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:eCommerce.POM_Client_Ecommerce@4c178a76]" started-at="2025-03-06T18:09:29 IST" name="afterTest" finished-at="2025-03-06T18:09:30 IST" duration-ms="1021" status="PASS">
+        <test-method signature="logoutProcess()[pri:9, instance:eCommerce.POM_Client_Ecommerce@fa4c865]" started-at="2025-03-06T20:43:28 IST" name="logoutProcess" finished-at="2025-03-06T20:43:36 IST" duration-ms="8399" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutProcess -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:eCommerce.POM_Client_Ecommerce@fa4c865]" started-at="2025-03-06T20:43:36 IST" name="afterTest" finished-at="2025-03-06T20:43:37 IST" duration-ms="999" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
